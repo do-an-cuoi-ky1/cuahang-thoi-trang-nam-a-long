@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CỬA HÀNG THỜI TRANG A LONG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/467388940_3716252318684927_9112017956316814122_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=sANOSP6KhA4Q7kNvgGcsBF8&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&oh=03_Q7cD1QHanC4OFWs08uH4KICdOvDJBuBodK2kXX0Tjl9GhDDTJQ&oe=677AB56F" alt="Logo" class="logo">
+            <h1>CỬA HÀNG THỜI TRANG A LONG</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Nhập số đo</h2>
+                <label for="height">Chiều cao (cm):</label>
+                <input type="number" id="height" placeholder="Nhập chiều cao">
+                
+                <label for="weight">Cân nặng (kg):</label>
+                <input type="number" id="weight" placeholder="Nhập cân nặng">
+                
+                <label for="chest">Vòng ngực (cm):</label>
+                <input type="number" id="chest" placeholder="Nhập vòng ngực">
+                
+                <label for="waist">Vòng eo (cm):</label>
+                <input type="number" id="waist" placeholder="Nhập vòng eo">
+                
+                <label for="legLength">Chiều dài chân (cm):</label>
+                <input type="number" id="legLength" placeholder="Nhập chiều dài chân">
+                
+                <button onclick="calculateSize()">Tính size</button>
+            </div>
+            
+            <div class="table-container">
+                <h2>BẢNG SIZE ÁO</h2>
+                <table>
+                    <tr><th>Chiều cao</th><th>Cân nặng</th><th>Vòng ngực</th><th>Size</th></tr>
+                    <tr><td>160-167 cm</td><td>50-60 kg</td><td>92-100 cm</td><td>S</td></tr>
+                    <tr><td>163-170 cm</td><td>55-65 kg</td><td>96-104 cm</td><td>M</td></tr>
+                    <tr><td>165-172 cm</td><td>65-75 kg</td><td>100-108 cm</td><td>L</td></tr>
+                    <tr><td>170-180 cm</td><td>75-90 kg</td><td>104-112 cm</td><td>XL</td></tr>
+                    <tr><td>170-190 cm</td><td>85-100 kg</td><td>106-114 cm</td><td>XLL</td></tr>
+                </table>
+
+                <h2>BẢNG SIZE QUẦN</h2>
+                <table>
+                    <tr><th>Vòng eo</th><th>Chiều dài chân</th><th>Size</th></tr>
+                    <tr><td>70-75 cm</td><td>70-75 cm</td><td>S</td></tr>
+                    <tr><td>75-80 cm</td><td>75-80 cm</td><td>M</td></tr>
+                    <tr><td>80-85 cm</td><td>80-85 cm</td><td>L</td></tr>
+                    <tr><td>85-90 cm</td><td>85-90 cm</td><td>XL</td></tr>
+                    <tr><td>90-95 cm</td><td>90-95 cm</td><td>XLL</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="result">
+            <p id="shirtResult"></p>
+            <p id="pantsResult"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
