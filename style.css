@@ -11,6 +11,10 @@ header {
     color: white;
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo-container {
@@ -22,8 +26,8 @@ header {
 }
 
 .logo {
-    width: 80px;
-    height: 50px; /* Điều chỉnh chiều cao */
+    width: 60px;  /* Đã giảm chiều rộng để không che chữ E */
+    height: 40px; /* Đã giảm chiều cao */
     object-fit: cover;
     border-radius: 8px; /* Bo góc cho logo */
 }
@@ -31,6 +35,7 @@ header {
 h1 {
     font-size: 24px;
     margin: 0;
+    white-space: nowrap; /* Ngừng line break */
 }
 
 main {
